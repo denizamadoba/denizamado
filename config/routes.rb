@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'application/skills', as:"skills"
   get 'application/hobbies',as:"hobbies"
   get 'application/experience',as:"experience"
+  get 'application/projects', as:"projects"
 
 
 end

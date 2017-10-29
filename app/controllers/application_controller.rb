@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   def home
 
   end
-  
+
   def about
 
   end
@@ -25,6 +25,9 @@ class ApplicationController < ActionController::Base
 
   def skills
 
+  end
+  def projects
+    
   end
 
 end
