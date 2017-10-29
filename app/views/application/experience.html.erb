@@ -1,1 +1,70 @@
-<h1>Experience<h1>
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+
+<style>
+.mySlides{
+  margin-left: 10%;
+}
+h1 {
+      font-family: 'Allerta Stencil';
+      	font-size: 65px;
+      	font-style: normal;
+      	font-variant: normal;
+      	font-weight: 500;
+      	line-height: 26.4px;
+        text-align:center;
+      }
+  h2{
+    font-family: 'Allerta Stencil';
+    text-align:right;
+    margin-right: 10%;
+
+  }
+  h3{
+    font-family: 'Allerta Stencil';
+    text-align:center;
+}
+.row1{
+  background-color: #ffaa80;
+}
+p{
+  margin-left: 65%;
+}
+</style>
+  <div class="container-fluid">
+    <div class="row">
+      <div class= "row1">
+        <br><br>
+        <br><br>
+
+        <h1>My Internships<h1>
+        <br><br>
+        <br>
+        <h2>Software Engineering Intern at Blue Apron</h2>
+        <!-- <p>In my position as Software Engineer Intern with Blue Apron,
+          I was involved with planning, design, development and testing within the Warehouse Management Systems team.
+          I’ve worked on improvements of the in-house warehouse management web platform on the back-end and front-end and
+           developed and tested a new feature to enhance the visualization of data used in facilities, using Ruby on Rails
+           on the back-end and Ember.js on the front-end.</p> -->
+        <%= image_tag("ba.jpg",:size => "500x400", :class=>"mySlides")%>
+        <%= image_tag("nyse.jpg",:size => "500x400", :class=>"mySlides")%>
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
